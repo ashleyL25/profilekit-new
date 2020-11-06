@@ -1,0 +1,311 @@
+.accordion:after,
+.tab-nav:after,
+.tab-panes>div.active,
+.tabs.vertical:after {
+    content: ".";
+}
+
+.accordion {
+    margin: 0 0 3rem;
+    padding: 0;
+    border: none!important;
+}
+
+.accordion>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.accordion:after {
+    height: 0;
+    display: block;
+    overflow: hidden;
+    clear: both;
+}
+
+.accordion>ul>li {
+    margin: 0 0 1px;
+    display: block;
+}
+
+.accordion>ul>li.active>a {
+    background: 0 0;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid #eee;
+}
+
+.accordion>ul>li>a {
+    padding: 1.3rem 2.5rem;
+    margin: 0;
+    font-size: 1.3rem;
+    display: block;
+    background-color: #eee;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+
+.accordion>ul>li>a:hover {
+    text-decoration: none;
+    color: #666;
+    background: #d0d0d0;
+    border-color: #d0d0d0;
+}
+
+.table.striped tbody tr:nth-child(even) td,
+.table.striped tbody tr:nth-child(even) th,
+.table>thead {
+    background-color: #eee;
+}
+
+.accordion>ul>li>div {
+    height: 0;
+    visibility: hidden;
+    border: 1px solid #eee;
+    overflow: hidden;
+    -webkit-transition-property: height,visibility;
+    transition-property: height,visibility;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+
+.accordion>ul>li.active>div {
+    height: auto;
+    visibility: visible;
+}
+
+.accordion .accordion-content {
+    height: auto;
+    padding: 2.5rem;
+    overflow: hidden;
+    display: block;
+}
+
+.accordion>ul>li>div>:first-child {
+    margin-top: 0;
+}
+
+.accordion .accordion-content {
+    padding: 3rem;
+}
+
+.lead {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    font-weight: 200;
+}
+
+address,
+p {
+    margin: 0 0 3rem;
+}
+
+ol,
+ul {
+    margin: 0 0 3rem 2rem;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.column,
+[class*=content-grid] .grid-item {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 3rem;
+    float: left;
+}
+
+.accordion>ul>li>div :not(.form-element):not(.input-indication):not(.radio-label):not(.checkbox-label):last-child {
+    margin-bottom: 0;
+}
+
+.accordion.small li>a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.accordion.small .accordion-content {
+    padding: 1.5rem;
+}
+
+.accordion.medium li>a {
+    padding: 1.3rem 2.5rem;
+    font-size: 1.3rem;
+}
+
+.accordion.medium .accordion-content {
+    padding: 2.5rem;
+}
+
+.accordion.large li>a {
+    padding: 1.6rem 3rem;
+    font-size: 1.4rem;
+}
+
+.accordion.large .accordion-content {
+    padding: 3rem;
+}
+
+.accordion.xlarge li>a {
+    padding: 1.9rem 3.5rem;
+    font-size: 1.5rem;
+}
+
+.accordion.xlarge .accordion-content {
+    padding: 3.5rem;
+}
+
+.accordion.rounded li:first-child>a {
+    border-radius: .3rem .3rem 0 0;
+}
+
+.accordion.rounded li:last-child>a,
+.accordion.rounded li>div {
+    border-radius: 0 0 .3rem .3rem;
+}
+
+.accordion.rounded li.active:last-child>a:hover {
+    border-radius: 0;
+}
+
+.accordion.solid li>a,
+.accordion.solid li>div {
+    border-style: solid;
+}
+
+.accordion.dashed li>a,
+.accordion.dashed li>div,
+.accordion.dotted li>a,
+.accordion.dotted li>div {
+    border-style: dashed;
+}
+
+.accordion.thick li>a,
+.accordion.thick li>div {
+    border-width: .2rem;
+}
+
+.table {
+    border-width: 1px 1px 0;
+    border-color: #eee;
+    border-style: solid;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    padding: 1rem 1.5rem;
+}
+
+.table>thead {
+    color: #666;
+}
+
+.table td,
+.table th+th {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.table>thead>tr>th {
+    border-bottom: none;
+}
+
+.table.small>tbody>tr>td,
+.table.small>tbody>tr>th,
+.table.small>tfoot>tr>td,
+.table.small>tfoot>tr>th,
+.table.small>thead>tr>td,
+.table.small>thead>tr>th {
+    padding: .7rem 1rem;
+    font-size: 1rem;
+}
+
+.table.medium>tbody>tr>td,
+.table.medium>tbody>tr>th,
+.table.medium>tfoot>tr>td,
+.table.medium>tfoot>tr>th,
+.table.medium>thead>tr>td,
+.table.medium>thead>tr>th {
+    padding: 1rem 1.5rem;
+}
+
+.table.large>tbody>tr>td,
+.table.large>tbody>tr>th,
+.table.large>tfoot>tr>td,
+.table.large>tfoot>tr>th,
+.table.large>thead>tr>td,
+.table.large>thead>tr>th {
+    padding: 1.3rem 2.5rem;
+    font-size: 1.4rem;
+}
+
+.table.xlarge>tbody>tr>td,
+.table.xlarge>tbody>tr>th,
+.table.xlarge>tfoot>tr>td,
+.table.xlarge>tfoot>tr>th,
+.table.xlarge>thead>tr>td,
+.table.xlarge>thead>tr>th {
+    padding: 1.6rem 3rem;
+    font-size: 1.5rem;
+}
+
+
+.column>:first-child,
+.row {
+    margin-top: 0;
+}
+
+.accordion > ul > li > a {
+    padding: 1.3rem 2.5rem;
+    background-color: #f4f4f4;
+    border-color: #f4f4f4;
+    color: #666;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.bar,
+.box,
+.form-element,
+.form-element+label:before,
+.overlay-info,
+.thumbnail,
+.thumbnail .background-image,
+.thumbnail img,
+a,
+button,
+input,
+textarea {
+    -webkit-transition-property: background,border-color,color,opacity,box-shadow,-webkit-transform;
+    transition-property: background,border-color,color,opacity,box-shadow,transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+a,
+p a {
+    color: #666;
+    outline: 0;
+}
+
+a,
+button,
+input,
+select,
+textarea {
+    touch-action: manipulation;
+}
